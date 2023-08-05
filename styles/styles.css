@@ -1,0 +1,34 @@
+body {
+    font-family: Crimson Text, helvetica, sans-serif;
+    color: #1a1a1a;
+}
+.title1 {
+    text-align: center;
+    font-family: itim;
+    font-size:xx-large;
+}
+.title2 {
+    font-size: larger;
+    text-align: center;
+}
+.title3 {
+    font-size:x-large;
+}
+
+a {
+    color: rgb(146, 33, 86);
+    font-family: crimson text;
+    text-decoration:none;
+
+}
+.navbox {
+    margin: 30px;
+    padding: 10px;
+    border:rgb(255, 170, 170);
+    border-width: 2px;
+    border-style: dashed;
+    background-color: antiquewhite;
+}
+.list {
+    align: center;
+}
