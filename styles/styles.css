@@ -12,7 +12,7 @@ body {
     text-align: center;
 }
 .title3 {
-    font-size:x-large;
+    font-size: x-large;
 }
 
 a {
@@ -24,11 +24,39 @@ a {
 .navbox {
     margin: 30px;
     padding: 10px;
-    border:rgb(255, 170, 170);
+    border:rgb(146, 33, 86);
     border-width: 2px;
     border-style: dashed;
-    background-color: antiquewhite;
+    background-color: rgb(255, 244, 244);
+    border-radius: 15px;
 }
 .list {
     align: center;
+}
+
+.container {
+    margin: 30px;
+    padding: 10px;
+    border: rgb(255, 170, 170);
+    border-width: 2px;
+    border-style: dashed;
+    background-color: rgb(255, 240, 244);
+}
+
+.notebox {
+    margin: 10px;
+    padding: 30px;
+    border: rgb(200, 128, 128);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 15px;
+    font-size:large;
+    width: fit-content;
+}
+
+/*END OF THE BASE STYLES. FLEX STYLES STARTS BELOW.*/
+
+.notboxcontainer {
+    display: flex;
 }
