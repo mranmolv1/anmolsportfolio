@@ -1,13 +1,15 @@
 * {
     border-radius: 30px;
-   
 }
 
 body {
     color: #333;
-    font-family: "Sarabun", sans-serif;
+    font-family: "Barlow", Helvetica, monospace;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 130%;
+    opacity: 0;
+    transition: all 300ms linear;
 }
 
 p {
@@ -15,11 +17,11 @@ p {
 }
 
 i {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .title {
-    padding: 5px 0 10px 0;
+    padding: 5px 0 5px 0;
     display: flex;
     flex-direction: column;
 }
@@ -68,6 +70,7 @@ i {
     border: 2px solid var(--secondary-color);
     transition-duration: 300ms;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .selected-tab {
@@ -88,7 +91,6 @@ i {
     padding: 10px;
     display: grid;
     grid-template-columns: 60% 35%;
-    grid-template-rows: 35% minmax(50%, span);
     gap: 20px;
     justify-content: center;
 }
@@ -96,20 +98,24 @@ i {
 .gallery {
     grid-area: 1 / 1 / 3 / 2;
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    align-items: center;
     padding: 10px;
     background-color: #f5f5f5;
     border: 1px solid #10101025;
+    align-items: center;
+    justify-items: center;
 }
 
 .gallery-button {
     height: 40px;
+    width: 40px;
     margin: 10px;
     background-color: var(--primary-color);
-    border-radius: 100%;
+    border-radius: 50%;
     opacity: 50%;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
+    cursor: pointer;
 }
 
 .gallery-button:hover {
@@ -120,26 +126,24 @@ i {
     border-radius: 15px;
     align-self: center;
     overflow: hidden;
-    border: 1px solid #10101075;
-    box-shadow: #10101015 0 0 30px;
-    flex-grow: 1;
+    box-shadow: #10101010 0 0 30px;
+    border: 1px solid #10101050;
+    min-height: 375px;
+    min-width: 500px;
 }
 
 .img-wrapper {
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
     display: flex;
-}
-
-.gallery-button:active .img-wrapper:after {
-    animation-name: fade;
-    animation-duration: 500ms;
+    height: 375px;
+    width: 500px;
 }
 
 .gallery-img {
     align-items: center;
     border-radius: 0px;
-    flex-grow: 1;
-    width:100%;
+    height:100%;
+    cursor: pointer;
 }
 
 .info-bar {
@@ -151,12 +155,14 @@ i {
 
 .price {
     font-weight: 700;
-    font-size: 30px;
+    line-height: 130%;
+    font-size: 24px;
     color: var(--primary-color);
 }
 
 b {
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .hire-prompt {
@@ -184,7 +190,7 @@ b {
     align-items: center;
     color: white;
     margin: 10px 0;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
     border: 2px solid #10101000;
 }
 
@@ -200,9 +206,54 @@ b {
     border: 2px solid var(--primary-color);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .container {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* image window for zoomed-in view */
+
+.img-window{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffcc;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    border-radius: 0;
+    opacity: 0;
+    visibility: collapse;
+}
+
+.selected-img {
+    align-items: center;
+    justify-self: center;
+    max-width: 96%;
+    max-height: 96%;
+    margin: auto;
+    flex-basis: 1;
+    border-radius: 10px;
+    box-shadow: #10101030 0 0 30px;
+    
+}
+
+.close-button {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    text-align: center;
+    transition: all 100ms ease;
+}
+
+.close-button:hover {
+    transform: scale(110%);
+    cursor: pointer;
 }

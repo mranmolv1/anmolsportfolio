@@ -1,7 +1,9 @@
+// gallary application
 const leftBtn = document.querySelector(".left");
 const rightBtn = document.querySelector(".right");
 const slide = document.querySelector(".img-wrapper");
 const img = document.querySelectorAll(".gallery-img");
+
 let slideNumber = 1;
 
 rightBtn.addEventListener('click',()=>{
@@ -23,10 +25,17 @@ leftBtn.addEventListener('click',()=>{
         slideNumber = img.length;
     }
 });
+// end
+
+
 
 // script for theme change
-
 const currentTab = document.querySelector(".selected-tab");
+const tab = document.querySelectorAll(".navigation-tab");
+const body = document.querySelector("body");
+
+document.onload = body.style.opacity= `1`;
+
 console.log(currentTab.textContent); 
 
 if (currentTab.textContent.match("Illustrations")) {
@@ -41,5 +50,41 @@ if (currentTab.textContent.match("Cartoon Stripes")) {
 if (currentTab.textContent.match("Designs")) {
     document.body.classList.toggle("blue-theme");
 }
-
 // end
+
+
+
+// script for image zoom-in window
+const windo = document.querySelector(".img-window");
+const imgShow = document.querySelector(".selected-img")
+const closeBtn = document.querySelector(".close-button");
+const container = document.querySelector(".container");
+const navBar = document.querySelector(".navigation-bar");
+const title = document.querySelector(".title");
+
+for (let index = 0; index < img.length; index++) {
+    const imgIn = img[index];
+    console.log(imgIn);
+
+    imgIn.addEventListener('click',()=>{
+        windo.style.opacity= `1`;
+        windo.style.visibility= `visible`;
+        imgShow.src = imgIn.src;
+        title.style.filter = `blur(3px)`;
+        navBar.style.filter = `blur(3px)`;
+        container.style.filter = `blur(3px)`;
+    });
+    
+    closeBtn.addEventListener('click',()=>{
+        windo.style.opacity= `0`;
+        windo.style.visibility= `hidden`;
+        title.style.filter = `none`;
+        navBar.style.filter = `none`;
+        container.style.filter = `none`;
+    });
+}
+// end
+
+
+
+
