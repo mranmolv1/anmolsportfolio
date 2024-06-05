@@ -27,16 +27,10 @@ leftBtn.addEventListener('click',()=>{
 });
 // end
 
-
-
 // script for theme change
 const currentTab = document.querySelector(".selected-tab");
 const tab = document.querySelectorAll(".navigation-tab");
 const body = document.querySelector("body");
-
-document.onload = body.style.opacity= `1`;
-
-console.log(currentTab.textContent); 
 
 if (currentTab.textContent.match("Illustrations")) {
     document.body.classList.toggle("green-theme");
@@ -64,15 +58,14 @@ const title = document.querySelector(".title");
 
 for (let index = 0; index < img.length; index++) {
     const imgIn = img[index];
-    console.log(imgIn);
-
+    
     imgIn.addEventListener('click',()=>{
         windo.style.opacity= `1`;
         windo.style.visibility= `visible`;
         imgShow.src = imgIn.src;
-        title.style.filter = `blur(3px)`;
-        navBar.style.filter = `blur(3px)`;
-        container.style.filter = `blur(3px)`;
+        title.style.filter = `blur(5px)`;
+        navBar.style.filter = `blur(5px)`;
+        container.style.filter = `blur(5px)`;
     });
     
     closeBtn.addEventListener('click',()=>{
@@ -84,7 +77,4 @@ for (let index = 0; index < img.length; index++) {
     });
 }
 // end
-
-
-
 
