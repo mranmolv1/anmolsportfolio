@@ -86,7 +86,7 @@ i {
 .container {
     padding: 10px;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 36%;
     gap: 20px;
     justify-items: space-around;
 }
