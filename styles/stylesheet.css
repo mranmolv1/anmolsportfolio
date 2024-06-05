@@ -8,7 +8,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 130%;
-    min-width: 420px;
+    min-width: 400px;
 }
 
 p {
@@ -359,7 +359,7 @@ hr {
     .navigation-bar {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 10px;
+        padding: 10px;
     }
 
     .slide {
