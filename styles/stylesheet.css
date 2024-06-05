@@ -325,17 +325,12 @@ hr {
     .container {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .about-wrapper {
         display: flex;
         flex-direction: column;
-    }
-
-    .navigation-tab {
-        margin: 5px;
-        font-size: 16px;
     }
 }
 
@@ -353,12 +348,12 @@ hr {
 
 @media screen and (max-width: 600px){
 
-    .hire-prompt, .about-wrapper, .info-bar, .gallery {
-        padding: 20px;       
+    * {
+        font-size: 16px;
     }
 
-    body {
-        margin: 3px;
+    .hire-prompt, .about-wrapper, .info-bar, .gallery {
+        padding: 20px;       
     }
 
     .navigation-bar {
