@@ -323,6 +323,7 @@ hr {
     .container {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     .about-wrapper {
@@ -353,5 +354,11 @@ hr {
     .img-wrapper {
         height: 225px;
         width: 300px;
+    }
+
+    .close-button {
+        top: 90%;
+        left: 50%;
+        right: 50%;
     }
 }
