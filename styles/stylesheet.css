@@ -89,7 +89,7 @@ i {
     display: grid;
     grid-template-columns: 60% 35%;
     gap: 20px;
-    justify-content: center;
+    justify-items: space-around;
 }
 
 .gallery {
