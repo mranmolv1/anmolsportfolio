@@ -364,13 +364,13 @@ hr {
     }
 
     .slide {
-        min-height: 180px;
-        min-width: 240px
+        min-height: 150px;
+        min-width: 200px
     }
     
     .img-wrapper {
-        height: 180px;
-        width: 240px;
+        height: 150px;
+        width: 200px;
     }
 
     .gallery-button {
