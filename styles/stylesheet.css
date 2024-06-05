@@ -88,7 +88,7 @@ i {
     display: grid;
     grid-template-columns: 60% 39%;
     gap: 20px;
-    justify-items: center;
+    justify-content: center;
 }
 
 .gallery {
