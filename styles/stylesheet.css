@@ -1,6 +1,5 @@
 * {
     border-radius: 30px;
-    border: 1px solid pink;
 }
 
 body {
@@ -87,7 +86,7 @@ i {
 .container {
     padding: 10px;
     display: grid;
-    grid-template-columns: 60% 35%;
+    grid-template-columns: 60% 40%;
     gap: 20px;
     justify-items: space-around;
 }
