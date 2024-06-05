@@ -127,24 +127,6 @@ i {
     min-width: 500px;
 }
 
-.loading-img-wrapper {
-    height: 375px;
-    width: 500px;
-    background-color: white;
-    border-radius: 14px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    transition: all 300ms linear;
-}
-
-.loading-img {
-    height: 165px;
-    width: 155px;
-}
-
 .img-wrapper {
     transition: all 300ms ease-in-out;
     display: flex;
@@ -268,13 +250,18 @@ b {
 
 /* about page's reviews section */
 
-.reviews {
-    line-height: 160%;
-    padding: 60px;
-    display: block;
-    margin: 0 auto;
+.about-me {
+    margin: 10px;
+    padding: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
 }
 
+.reviews {
+    line-height: 160%;
+    margin: 20px 40px;
+}
 .flag {
     height: 18px;
     border-radius: 50%;
@@ -293,8 +280,9 @@ hr {
 .project-page {
     font-size: 16px;
     float: right;
-    height: 40px;
+    height: auto;
     width: 120px;
+    margin: 20px;
     text-align: center;
     align-content: center;
     color: var(--secondary-color);
@@ -314,7 +302,7 @@ hr {
 .about-wrapper {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 0fr 1fr;
     padding: 30px;
     gap: 20px;
 }
@@ -344,13 +332,26 @@ hr {
 }
 
 @media screen and (max-width: 600px){
-    * {
-        scale: 96%;
+
+    .hire-prompt, .about-wrapper, .info-bar, .gallery {
+        padding: 20px;       
     }
+
     body {
-        margin: 0;
+        margin: 3px;
     }
     .navigation-tab {
-        margin: 1px;
+        margin: 3px;
+        font-size: 16px;
+    }
+
+    .slide {
+        min-height: 225px;
+        min-width: 300px
+    }
+    
+    .img-wrapper {
+        height: 225px;
+        width: 300px;
     }
 }
