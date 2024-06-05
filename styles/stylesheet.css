@@ -56,8 +56,8 @@ i {
 .navigation-bar {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navigation-tab {
