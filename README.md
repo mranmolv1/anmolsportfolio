@@ -1,2 +1,3 @@
-# mranmolv1.github.io
-Creating a website for personal as well as learning purpose
+# anmol
+Creating a website for professional purpose. Thanks to Vercel (vercel.com) for deploying my website.
+:)
