@@ -1,13 +1,8 @@
-* {
-    border-radius: 30px;
-}
-
 body {
     color: #333;
-    font-family: "Barlow", Helvetica, monospace;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 130%;
+    font-family: "Jost", Helvetica, monospace;
+    font-size: 16px;
+    line-height: 150%;
     min-width: 320px;
 }
 
@@ -20,9 +15,10 @@ i {
 }
 
 .title {
-    padding: 5px 0 0 0;
     display: flex;
     flex-direction: column;
+    border-radius: 0;
+    margin: 0 16px;
 }
 
 /*themes*/
@@ -32,30 +28,31 @@ i {
 }
 
 .green-theme {
-    --primary-color: #006652;
-    --secondary-color: #00665275;
+    --primary-color: #2ca089ff;
+    --secondary-color: #2ca08975;
 }
 
 .red-theme {
-    --primary-color: #b80a44;
-    --secondary-color: #b80a4475;
+    --primary-color: #c83737ff;
+    --secondary-color: #c8373775;
 }
 
 .yellow-theme {
-    --primary-color: #cc8808;
-    --secondary-color: #cc880875;
+    --primary-color: #f5b400ff;
+    --secondary-color: #f5b40075;
 }
 
 .blue-theme {
-    --primary-color: #233fbb;
-    --secondary-color: #233fbb75;
+    --primary-color: #013d98ff;
+    --secondary-color: #013d9875;
 }
 
 /*end*/
 
 .navigation-bar {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
 }
 
 .navigation-tab {
@@ -66,10 +63,11 @@ i {
     align-content: center;
     color: var(--secondary-color);
     background-color: white;
-    border: 2px solid var(--secondary-color);
-    transition-duration: 300ms;
+    border: 1px solid var(--secondary-color);
+    transition-duration: 200ms;
     text-decoration: none;
-    font-weight: 500;
+
+    border-radius: 16px;
 }
 
 .selected-tab {
@@ -86,7 +84,8 @@ i {
 .container {
     padding: 10px;
     display: grid;
-    grid-template-columns: 60% 39%;
+    grid-template-columns: 60% 38%;
+    grid-template-rows: 35vb 45vb;
     gap: 20px;
     justify-content: center;
 }
@@ -98,24 +97,26 @@ i {
     flex-direction: row;
     padding: 30px;
     background-color: #f5f5f5;
-    border: 1px solid #10101025;
     align-items: center;
     justify-items: center;
+
+    border-radius: 16px;
 }
 
 .gallery-button {
     height: 40px;
-    width: 40px;
+    width: 30px;
     margin: 10px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
+    background-color: #10101050;
+    border-radius: 30px;
     opacity: 50%;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     cursor: pointer;
 }
 
 .gallery-button:hover {
     opacity: 100%;
+    background-color: var(--primary-color);
 }
 
 .slide {
@@ -123,13 +124,14 @@ i {
     overflow: hidden;
     box-shadow: #10101010 0 0 30px;
     border: 1px solid #10101050;
-    border-radius: 15px;
     min-height: 375px;
     min-width: 500px;
+
+    border-radius: 16px;
 }
 
 .img-wrapper {
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
     display: flex;
     height: 375px;
     width: 500px;
@@ -147,12 +149,13 @@ i {
     grid-area: 1 / 2 / 2 / 2 ;
     padding: 30px;
     background-color: #f5f5f5;
-    border: 1px solid #10101015;
     align-content: center;
+
+    border-radius: 16px;
 }
 
 .bigtext {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 130%;
     font-size: 24px;
     color: var(--primary-color);
@@ -167,8 +170,9 @@ b {
     grid-area: 2 / 2 / 3 / 3;
     padding: 30px;
     background-color: #f5f5f5;
-    border: 1px solid #10101015;
     align-content: center;
+
+    border-radius: 16px;
 }
 
 .button-img {
@@ -189,8 +193,10 @@ b {
     align-items: center;
     color: white;
     margin: 10px 0;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     border: 2px solid #10101000;
+
+    border-radius: 16px;
 }
 
 .freelancer-button {
@@ -256,7 +262,7 @@ b {
     margin: 10px;
     padding: 30px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 170%;
 }
 
@@ -292,7 +298,7 @@ hr {
     background-color: white;
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     text-decoration: none;
     font-weight: 500;
 }
@@ -304,8 +310,7 @@ hr {
 
 .about-wrapper {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 30px;
     gap: 20px;
 }
@@ -327,6 +332,10 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .navigation-tab {
+        min-height: 48px;
     }
 
     .about-wrapper {
@@ -361,6 +370,10 @@ hr {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 10px;
+    }
+
+    .navigation-tab {
+        min-height: 20px;
     }
 
     .slide {
