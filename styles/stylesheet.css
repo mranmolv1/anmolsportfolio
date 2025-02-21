@@ -123,11 +123,10 @@ i {
     align-self: center;
     overflow: hidden;
     box-shadow: #10101010 0 0 30px;
-    border: 1px solid #101010;
     min-height: 375px;
     min-width: 500px;
 
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 .img-wrapper {
