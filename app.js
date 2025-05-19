@@ -4,6 +4,8 @@ const rightBtn = document.querySelector(".right");
 const slide = document.querySelector(".img-wrapper");
 const img = document.querySelectorAll(".gallery-img");
 
+
+
 let slideNumber = 1;
 
 rightBtn.addEventListener('click',()=>{
@@ -33,13 +35,13 @@ const tab = document.querySelectorAll(".navigation-tab");
 const body = document.querySelector("body");
 
 if (currentTab.textContent.match("Illustrations")) {
-    document.body.classList.toggle("green-theme");
-}
-if (currentTab.textContent.match("Icons")) {
     document.body.classList.toggle("red-theme");
 }
-if (currentTab.textContent.match("Cartoon Stripes")) {
+if (currentTab.textContent.match("Vector Drawings")) {
     document.body.classList.toggle("yellow-theme");
+}
+if (currentTab.textContent.match("Cartoon Stripes")) {
+    document.body.classList.toggle("green-theme");
 }
 if (currentTab.textContent.match("Designs")) {
     document.body.classList.toggle("blue-theme");
