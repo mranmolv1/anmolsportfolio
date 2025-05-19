@@ -327,6 +327,12 @@ hr {
 .my-photo {
     margin-right: 20px;
     border: 1px solid var(--secondary-color);
+    filter: grayscale(1);
+    transition: 5s;
+}
+
+.my-photo:hover {
+    filter: grayscale(0);
 }
 
 @media screen and (max-width: 960px){
