@@ -126,11 +126,17 @@ i {
 	border: 1px solid black;
 }
 
+.loader {
+   width: 100%;
+   z-index: 1;
+}
+
 .img-wrapper {
     transition: all 200ms ease-in-out;
     display: flex;
     height: 375px;
     width: 500px;
+    z-index: -1;
 }
 
 .gallery-img {
