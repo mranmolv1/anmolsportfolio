@@ -68,7 +68,7 @@ i {
     transition-duration: 200ms;
     text-decoration: none;
 
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 .selected-tab {
@@ -102,7 +102,7 @@ i {
     border: 1px solid #ececec;
     align-items: center;
     justify-items: center;
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 .gallery-button {
@@ -139,7 +139,7 @@ i {
 
 .gallery-img {
     align-items: center;
-    border-radius: 0px;
+    border-radius: 16px;
     height:100%;
     width: auto;
     cursor: pointer;
@@ -151,7 +151,7 @@ i {
     background-color: white;
     border: 1px solid #ececec;
     align-content: center;
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 .bigtext {
@@ -172,7 +172,7 @@ b {
     background-color: white;
     border: 1px solid #ececec;
     align-content: center;
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 .button-img {
@@ -196,7 +196,7 @@ b {
     transition-duration: 200ms;
     border: 2px solid #10101000;
 
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 .freelancer-button {
