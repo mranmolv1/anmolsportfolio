@@ -78,7 +78,6 @@ i {
 }
 
 .navigation-tab:hover {
-    color: white;
     border: 1px solid var(--primary-color);
     background-color: var(--secondary-color);
 }
@@ -127,6 +126,7 @@ i {
     min-height: 375px;
     min-width: 500px;
 	border: 1px solid black;
+	border-radius: 16px
 }
 
 .img-wrapper {
@@ -139,7 +139,6 @@ i {
 
 .gallery-img {
     align-items: center;
-    border-radius: 16px;
     height:100%;
     width: auto;
     cursor: pointer;
